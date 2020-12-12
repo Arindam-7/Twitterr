@@ -31,12 +31,12 @@ btnTop.addEventListener('click', () => {
     const inputPassword = document.querySelector('.password');
 
     if (inputUserInfo.value !== '' && inputPassword.value !== '') {
-        mainPage.style.display = 'none';
+        mainPage.style.display= 'none';
         newsFeedPage.style.display = 'block';
     } else {
         goToLoginPage();
         loginModal.style.display = 'block';
-    }
+    }display
 })
 
 // Login page
