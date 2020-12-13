@@ -7,6 +7,10 @@ const newsFeedPage = document.querySelector('.feeds-page');
 const loginModal = document.querySelector('.login-modal');
 const modalX = document.querySelector('.login-modal i');
 const loginFormBtn = document.querySelector('.login-form-btn');
+const postBtn = document.querySelector('.post-btn');
+const modalWrapper = document.querySelector('.modal-wrapper');
+const modal = document.querySelector('.modal');
+const postModalX = document.querySelector('.modal-header i');
 
 
 /*****************************************************/
@@ -55,4 +59,16 @@ loginFormBtn.addEventListener('click', () => {
     } else {
         loginModal.style.display = 'block';
     }
+})
+
+// News feed page
+// Post modal
+postBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modalWrapper.classList.add('modal-wrapper-display');
+})
+
+postModalX.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalWrapper.classList.remove('modal-wrapper-display');
 })
