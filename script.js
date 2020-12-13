@@ -36,7 +36,7 @@ btnTop.addEventListener('click', () => {
     } else {
         goToLoginPage();
         loginModal.style.display = 'block';
-    }display
+    }
 })
 
 // Login page
