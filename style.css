@@ -1025,5 +1025,5 @@ body {
 }
 
 .border-color {
-    border-color: #444;
+    border-color: #444 !important; 
 }
